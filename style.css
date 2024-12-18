@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+main {
+    /* height: 100vh; */
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+main .container {
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+main .container .task_one,
+main .container .task_two,
+main .container .task_three {
+    box-shadow: 0 0 5px gold;
+    padding: 10px;
+    width: fit-content;
+    font-size: 20px;
+    color: white;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+main .container .task_one h2,
+main .container .task_two h2,
+main .container .task_three h2 {
+    color: gold;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px gold, 0 0 20px gold, 0 0 40px gold, 0 0 80px gold;
+}
+
+main .container .task_one .inputs-results,
+main .container .task_two .inputs-results,
+main .container .task_three .inputs-results {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+main .container .task_one .inputs,
+main .container .task_two .inputs {
+    display: flex;
+    /* flex: 1; */
+    gap: 15px;
+    justify-content: inherit;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+main .container .task_one input,
+main .container .task_two input,
+main .container .task_three input {
+    border-radius: 5px;
+    border: 0;
+    padding: 10px;
+    width: 180px;
+    font-size: 16px;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+
+.results {
+    margin: 10px 0;
+
+}
+
+main .container .task_one .result,
+main .container .task_two .result,
+main .container .task_three .result {
+    padding: 10px 50px;
+    border-radius: 5px;
+    border: 3px white dashed;
+
+
+}
+
+main .container .task_one .operations,
+main .container .task_two .operations,
+main .container .task_three .operations {
+    text-align: center;
+}
+
+main .container .task_one button,
+main .container .task_two button,
+main .container .task_three button {
+    min-width: 120px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: transparent;
+    color: gold;
+    border: 3px gold solid;
+    transition: 0.3s;
+}
+
+button:hover {
+    cursor: pointer;
+    text-shadow: 0 0 10px gold, 0 0 20px gold, 0 0 40px gold, 0 0 80px gold, 0 0 160px gold;
+
+}
+
+
+
+/*
+
+
+/** Extra Small devices (XS) - Phones in portrait mode (max-width: 575px) 
+@media (max-width: 575px) {
+
+}
+
+/** Small devices (SM) - Phones in landscape mode (min-width: 576px and max-width: 767px) 
+@media (min-width: 576px) and (max-width: 767px) {
+
+}
+
+/** Medium devices (M) - Tablets (min-width: 768px and max-width: 991px) 
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+
+/** Large devices (L) - Desktops and laptops (min-width: 992px and max-width: 1199px) 
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/** Extra Large devices (XL) - Wide screens (min-width: 1200px) 
+@media (min-width: 1200px) {
+
+}
+*/

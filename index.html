@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Day5 </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                
+                <div class="task_one">
+                    <h2>Task 1</h2>
+                    <div class="inputs-results">
+                        
+                        <div class="inputs">
+                            <div class="input-one">
+                                <input type="number" placeholder="First Number "  >
+                            </div>
+                            
+                            <div class="input-two">
+                                <input type="number" placeholder=" Second Number " >
+                            </div>
+                        </div>
+                        <div class="results">
+                            <label class="result"></label>
+                        </div>
+                    </div>
+
+                    
+                    <div class="operations">
+                        <button class="sum"  onclick="task1(this)"  >Sum</button>
+                        <button class="sub"  onclick="task1(this)"  >Sub</button>
+                        <button class="mul"  onclick="task1(this)"  >Mul</button>
+                        <button class="div"  onclick="task1(this)"  >Div</button>
+                        <button class="mod"  onclick="task1(this)"  >Mod</button>
+                    </div>
+                
+                </div>
+                
+                <div class="task_two">
+                    <h2>Task 2</h2>
+    
+                    <div class="inputs-results">
+                        <div class="inputs">
+                            <div class="input-one">
+                                <!-- <label for="Length"> Length : </label> -->
+                                <input type="number" placeholder="Length" >
+                            </div>
+                            <div class="input-two">
+                                <!-- <label for="Width"> Width : </label> -->
+                                <input type="number" placeholder="Width" >
+                            </div>
+                        </div>
+                        <div class="results">
+                            <label class="result"></label>
+                        </div>
+                    </div>
+            
+                    <div class="operations">
+                        <button  class="area"      onclick="task2(this)">Area</button>
+                        <button  class="perimeter" onclick="task2(this)">Perimeter</button>
+                        <button  class="diagonal"  onclick="task2(this)">Diagonal</button>
+                    </div>
+                </div>
+                
+                <div class="task_three">
+                    <h2>Task 3</h2>
+                    <div class="inputs-results">
+                        <div class="input-one">
+                            <!-- <label for="Radius"> Radius : </label> -->
+                            <input type="number" placeholder="Radius"  >
+                        </div>
+                        <div class="results">
+                            <label class="result"></label>
+                        </div>
+                    </div>
+            
+                    <div class="operations">
+                        <button class="area"          onclick="task3(this)">Area</button>
+                        <button class="circumference" onclick="task3(this)">Circumference</button>
+                        <button class="diameter"      onclick="task3(this)">Diameter</button>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
